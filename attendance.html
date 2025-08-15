@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Send Form → Telegram</title>
+  <link rel="stylesheet" href="css/attendance.css">
+  <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+ <div id="home-page" class="page active">
+     
+     
+        <div class="bouncing-dots-container">
+            <div id="dot"> 
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        </div>
+    </div>
+    <div id="image-div">
+        <img src="img/VTechb.png" 
+       alt="image">
+    </div>
+    
+    <div  class="progress-bar">
+        <div style="text-align: center" class="progress-fill"></div>
+    </div>
+    </div>
+
+    <div id="login-page" class="page">
+        <div class="login-container">
+            <h1 id="head">
+                <span id="span1">Attendance web</span><br>
+                 <span id="span2">book</span></h1>
+            <form id="form" class="card" autocomplete="off">
+                
+                <img id="text" src="img/VTecht.png" alt="">
+               
+<fieldset > 
+    <legend for="level">Candidate Name</legend>
+    <input id="level" name="level" placeholder="write you name..." required>
+</fieldset>
+<br>
+<fieldset> 
+    <legend  for="input">Time In</legend>
+    <input type="time"id="input" name="input" placeholder="e.g. Question title" required>
+</fieldset>
+<br>
+<fieldset>
+    <legend for="answer">Date</legend>
+    <input type="date" id="answer" name="answer" placeholder="Your answer here" required>
+    
+</fieldset>
+    <button type="submit">Submit</button>
+
+    <div class="status" id="status" aria-live="polite"></div>
+       <div class="statu" id="statu" aria-live="polite"></div>
+    <nav id="waec"> 
+    <a  href="https://www.waecdirect.org/">
+      click to check<br>
+        your waec result
+    </a>
+    </nav>
+  </form>
+
+        </div>
+    </div>
+
+    <div id="success-page" class="page">
+        <h1 class="success-text">Welcome, Amir! You have successfully logged in.</h1>
+    </div>
+  <script src="js/attendance.js"></script>
+    
+</body>
+</html>
